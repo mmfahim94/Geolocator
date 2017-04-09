@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CPS630 - LAB03 </title>
+	<link rel="stylesheet" type="text/css" href="lab03.css" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Carter+One" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body class="body"> 
+	<header>
+		<h1><span class="glyphicon glyphicon-map-marker"></span> <span> Geolocator </span></h1>
+	</header>
+
+	<section>
+		<div class = "left">
+			<div id="locationField">
+				<button class = "btn b" onclick="currentLocation()"> Get Current Location </button> <br><br>	
+		  	  	<input id="autocomplete" placeholder="Set Current Location" type="text" autocomplete=off />
+		  	  	<br><br>
+		  	  	<p id="demo"></p>
+		  	</div><br>	
+
+			<div class = "dropzone" id="dropzone">
+				<p class = "dropzoneText"> Drop files here </p> 
+			</div><br>
+
+			<div>
+				<p id = "info"> </p>
+			</div>
+
+			<button class = "btn btn-success" id = "distance"> Calculate Distance </button>
+			<br><br>
+
+			<div id = "a2b">
+				<p id = "km"> </p>
+			</div>
+
+			<button class = "btn btn-warning" id = "clear" onClick = "clearData()"> Clear Data and Map</button>
+		</div>
+
+		<div class = "right">
+			<div id="map"></div>
+			<h3> Zoom out to see other location </h3>
+		</div>			
+	</section>
+
+<script type = "text/javascript" src="lab03.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6SLG5gHPPDaVG28mLXSZEWZsrxY7VnCM&libraries=places&callback=initMap"></script>
+
+</body>
+</html>
