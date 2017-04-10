@@ -10,4 +10,3 @@ Google map api was used for the map
 Drag and drop the test.txt file on the dropzone to calculate distance. You can also modify the location (lattitude and longitude coordinations).
 
 https://www.scs.ryerson.ca/~mmfahim/cps630/lab03/
-
